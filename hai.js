@@ -12,3 +12,4 @@ let kiemtra=(n)=>{
 for(var i=1;i<=10000;++i)
 	if(kiemtra(i))
 		console.log(i);
+//asdhjkshdfjkhfjasdfsdkfjsd;
