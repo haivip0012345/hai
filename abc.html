@@ -4,8 +4,28 @@
 	<title></title>
 </head>
 <body>
-	<a href="" title=""></a>
-	<a href=""></a>
-	
+	<div>
+		<form>
+			<span>Nhập họ tên: </span><br>
+			<input type="" name="" id="name"><br>
+			<span>Chọn giới tính: </span><br>
+			<input type="radio" name="gt" class="gt" value="nam"> Nam <br>
+			<input type="radio" name="gt" class="gt" value="nữ">Nữ <br>
+			<select id="ns">
+				<option value="1999">1999</option>
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+			</select>
+			<input type="button" name="" value="gửi" onclick="tinh()">
+		</form>
+	</div>
+	<script type="text/javascript">
+		var tinh=function(){
+			var name=document.getElementById('name');
+			var gt=document.querySelector(".gt:checked");
+			var ns=document.getElementById(ns);
+			alert(` Tên là: ${name.value}\n Giới tính: ${gt.value}\n Năm sinh: ${ns.value}`);
+		}
+	</script>
 </body>
 </html>
